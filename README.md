@@ -11,3 +11,13 @@ QA: https://travel-journal-frontend.vercel.app/
 
 ## Backend
 QA: https://travel-journal-backend.onrender.com
+
+### Potential libs to use
+
+- uuid - https://www.npmjs.com/package/uuid
+- d3 react - https://react-d3-library.github.io/
+- gsap - https://greensock.com/gsap/
+- 5 react chart libraries - https://www.overloop.io/blog/top-5-react-chart-libraries
+- react-charts - https://www.npmjs.com/package/react-charts
+- https://livecodestream.dev/post/7-react-chart-libraries-for-your-web-projects/
+
