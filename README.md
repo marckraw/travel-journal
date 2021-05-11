@@ -20,4 +20,5 @@ QA: https://travel-journal-backend.onrender.com
 - 5 react chart libraries - https://www.overloop.io/blog/top-5-react-chart-libraries
 - react-charts - https://www.npmjs.com/package/react-charts
 - https://livecodestream.dev/post/7-react-chart-libraries-for-your-web-projects/
-
+- https://www.npmjs.com/package/classnames
+- https://www.npmjs.com/package/axios
