@@ -22,3 +22,4 @@ QA: https://travel-journal-backend.onrender.com
 - https://livecodestream.dev/post/7-react-chart-libraries-for-your-web-projects/
 - https://www.npmjs.com/package/classnames
 - https://www.npmjs.com/package/axios
+- https://iconic.app
