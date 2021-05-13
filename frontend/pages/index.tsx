@@ -5,6 +5,11 @@ import Date from '../components/date'
 import Layout from '../components/layout'
 import utilStyles from '../styles/utils.module.scss'
 import {getSortedPostsData} from '../lib/posts'
+import {
+    ExampleBarChartStackedBySign,
+    ExampleBrushBar,
+    ExampleLineChart
+} from '../components/ChartExample';
 
 interface HomeProps {
     allPostsData: any
@@ -16,6 +21,18 @@ export default function Home({allPostsData}: HomeProps): JSX.Element {
             <Head>
                 <title>This is title from head</title>
             </Head>
+            <section className={utilStyles.headingMd}>
+                <h2>Charts: </h2>
+                <div style={{height: '400px'}}>
+                    <ExampleLineChart />
+                </div>
+                <div style={{height: '400px'}}>
+                    <ExampleBrushBar />
+                </div>
+                <div style={{height: '400px'}}>
+                    <ExampleBarChartStackedBySign />
+                </div>
+            </section>
             <section className={utilStyles.headingMd}>…</section>
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
                 <h2 className={utilStyles.headingLg}>Blog</h2>
