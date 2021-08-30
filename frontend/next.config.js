@@ -8,9 +8,8 @@ const withBundleAnalyzer = bundleAnalyzer({
 module.exports = withPlugins([
     [withBundleAnalyzer],
 ], {
+    experimental: { esmExternals: true },
+    webpack5: true,
     target: 'serverless',
     trailingSlash: true,
-    future: {
-        webpack5: true,
-    },
 })
