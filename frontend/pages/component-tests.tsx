@@ -10,12 +10,15 @@ import {
     ExampleBrushBar,
     ExampleLineChart
 } from '../components/ChartExample'
+import useToggle from '../hooks/useToggle'
 
 interface ComponentTestsProps {
     allPostsData: any
 }
 
 export default function ComponentTests({allPostsData}: ComponentTestsProps): JSX.Element {
+    const [isShown, toggle] = useToggle()
+
     return (
         <Layout home>
             <Head>
@@ -49,6 +52,13 @@ export default function ComponentTests({allPostsData}: ComponentTestsProps): JSX
                         </li>
                     ))}
                 </ul>
+            </section>
+            <section>
+                <h1>Test useToggle hook</h1>
+                <button onClick={toggle}>{isShown ? 'Hide' : 'Show'}</button>
+                {
+                    isShown && <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa distinctio eius error est illum in laboriosam nihil qui quos? Assumenda exercitationem fugiat hic laborum modi quibusdam reiciendis, rerum voluptatibus.</p>
+                }
             </section>
         </Layout>
     )
