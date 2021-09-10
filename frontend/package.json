@@ -6,7 +6,9 @@
     "dev": "next dev -p 8000",
     "clean:dev": "yarn clean:all && yarn dev",
     "clean:all": "rm -rf .next && rm -rf out",
+    "serve:export:production": "yarn clean:all && yarn build && yarn export && npx http-serve -p 9001 ./out",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint:all": "eslint .",
     "lint:all:fix": "eslint . --fix"

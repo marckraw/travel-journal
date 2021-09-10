@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Date from '../components/date'
 import Layout from '../components/layout'
 import utilStyles from '../styles/utils.module.scss'
-import {getSortedPostsData} from '../lib/posts'
 import {
     ExampleBarChartStackedBySign,
     ExampleBrushBar,
@@ -67,14 +66,11 @@ export default function ComponentTests({allPostsData}: ComponentTestsProps): JSX
 
 
 export const getStaticProps: GetStaticProps =  async () => {
-    // Get external data from the file system, API, DB, etc.
-    const allPostsData = getSortedPostsData()
-
     // The value of the `props` key will be
     //  passed to the `Home` component
     return {
         props: {
-            allPostsData
+            allPostsData: []
         }
     }
 }

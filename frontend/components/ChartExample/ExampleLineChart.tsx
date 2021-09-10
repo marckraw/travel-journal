@@ -1,5 +1,5 @@
-import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import React from 'react'
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
 const data = [
     {
@@ -44,7 +44,7 @@ const data = [
         pv: 4300,
         amt: 2100,
     },
-];
+]
 
 
 export default function ExampleLineChart() {
@@ -70,5 +70,5 @@ export default function ExampleLineChart() {
                 <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
             </LineChart>
         </ResponsiveContainer>
-    );
+    )
 }

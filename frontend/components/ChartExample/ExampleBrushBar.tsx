@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
     BarChart,
     Bar,
@@ -10,7 +10,7 @@ import {
     Tooltip,
     Legend,
     ResponsiveContainer,
-} from 'recharts';
+} from 'recharts'
 
 const data = [
     { name: '1', uv: 300, pv: 456 },
@@ -52,7 +52,7 @@ const data = [
     { name: '38', uv: -91, pv: -2 },
     { name: '39', uv: -66, pv: 154 },
     { name: '40', uv: -50, pv: 186 },
-];
+]
 
 export default function ExampleBrushBar() {
     return (
@@ -79,5 +79,5 @@ export default function ExampleBrushBar() {
                 <Bar dataKey="uv" fill="#82ca9d" />
             </BarChart>
         </ResponsiveContainer>
-    );
+    )
 }

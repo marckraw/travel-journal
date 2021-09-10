@@ -1,4 +1,4 @@
-import React  from 'react';
+import React  from 'react'
 import {
     BarChart,
     Bar,
@@ -9,7 +9,7 @@ import {
     Legend,
     ReferenceLine,
     ResponsiveContainer,
-} from 'recharts';
+} from 'recharts'
 
 const data = [
     {
@@ -54,7 +54,7 @@ const data = [
         pv: 4300,
         amt: 2100,
     },
-];
+]
 
 export default function ExampleBarChartStackedBySign() {
     return (
@@ -81,6 +81,6 @@ export default function ExampleBarChartStackedBySign() {
                 <Bar dataKey="uv" fill="#82ca9d" stackId="stack" />
             </BarChart>
         </ResponsiveContainer>
-    );
+    )
 }
 
