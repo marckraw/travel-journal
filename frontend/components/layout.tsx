@@ -38,6 +38,13 @@ export default function Layout({children, home}: LayoutProps): JSX.Element {
                             alt={name}
                         />
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                        <div className={styles.navigation}>
+                            <ul>
+                                <li><Link href="/">Home</Link></li>
+                                <li><Link href="/info">Info</Link></li>
+                                <li><Link href="/component-tests">Component Tests</Link></li>
+                            </ul>
+                        </div>
                     </>
                 ) : (
                     <>

@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
 
-export default function Home(props): JSX.Element {
+export default function Info(props): JSX.Element {
     return (
         <Layout home>
             <Head>
-                <title>Travel Journal - Home</title>
+                <title>Travel Journal - Info</title>
             </Head>
             <section>
-                Travel Journal Project
+                Travel Journal Project - Info
             </section>
         </Layout>
     )
